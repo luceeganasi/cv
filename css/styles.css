@@ -1,0 +1,145 @@
+body {
+    background-color: #EFF5F5;
+    margin: 0;
+    text-align: center;
+    font-family: 'merriweather', serif;
+}
+
+h1 {
+    color: #EB6440;
+    font-family: 'lora', serif;
+    font-weight: 700;
+    font-size: 4.38rem;
+    margin: 50px auto 0 auto;
+    line-height: 2;
+}
+
+h2 {
+    font-family: 'merriweather', serif;
+    color: #EB6440;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+h3 {
+    font-family: 'merriweather', serif;
+    color: #EB6440;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+hr {
+    border-style: dotted none none none;
+    border-width: 8px;
+    border-color: #D6E4E5;
+    width: 100px;
+    margin: 80px auto;
+}
+
+p {
+    color: #497174;
+    font-family: 'montserrat', sans-serif;
+    margin: 0;
+}
+
+a {
+    color: #EB6440;
+}
+
+.top-container {
+    margin: 0 0 100px 0;
+    padding: 130px 0 0 0;
+    position: relative;
+    background-color: #D6E4E5;
+}
+
+.cloud-top {
+    position: absolute;
+    right: 350px;
+    top: 80px;
+    width: 13.25rem;
+}
+
+.cloud-bottom {
+    position: absolute;
+    left: 300px;
+    bottom: 300px;
+}
+
+.profile-photo {
+    width: 250px;
+    border-radius: 50%;
+}
+
+.info {
+    width: 40rem;
+    margin: 0 auto;
+}
+
+.skill-row {
+    width: 50%;
+    margin: 50px auto 150px auto;
+    text-align: left;
+    line-height: 2;
+}
+
+.design-photo {
+    width: 219px;
+    border-radius: 50%;
+    float: left;
+    margin: auto 30px auto auto;
+}
+
+.photography-photo {
+    width: 219px;
+    border-radius: 50%;
+    float: right;
+    margin: auto auto auto 30px;
+}
+
+.contact-me-message {
+    margin: 70px auto;
+    width: 40rem;
+}
+
+.btn {
+    border-radius: 28px;
+    font-family: 'merriweather', serif;
+    color: #EFF5F5;
+    font-size: 1.25rem;
+    background: #EB6440;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    transition: 0.2s;
+    margin: 50px auto;
+    display: block;
+    width: 7rem;
+}
+
+.btn:hover {
+    background-color: rgb(255, 137, 104);
+  }
+
+  .bottom-container {
+    background-color: #497174;
+    padding: 30px;
+    margin-top: 150px;
+  }
+
+  .footer-link {
+    color: #EFF5F5;
+    margin: auto 15px;
+    transition: 0.2s;
+    text-decoration: none;
+  }
+
+  .footer-link:hover {
+    color: #EB6440;
+  }
+
+  .copyright {
+    color: #D6E4E5;
+    margin: 30px auto 0 auto;
+    font-family: 'merriweather', serif;
+    font-size: 0.80rem;
+  }
