@@ -1,6 +1,5 @@
 body {
     background-color: #EFF5F5;
-    margin: 0;
     text-align: center;
     font-family: 'merriweather', serif;
 }
@@ -39,36 +38,69 @@ hr {
 p {
     color: #497174;
     font-family: 'montserrat', sans-serif;
-    margin: 0;
+    font-size: 1rem;
+    line-height: 2;
+}
+
+.md-header {
+    font-size: 4rem;
+}
+
+.big-header {
+    font-size: 7rem;
 }
 
 a {
     color: #EB6440;
 }
 
+/* navigation */
+
+.navbar {
+    padding: 0.5rem 3rem;
+}
+
+/* Top container */
+
 .top-container {
-    margin: 0 0 100px 0;
-    padding: 130px 0 0 0;
     position: relative;
-    background-color: #D6E4E5;
+    padding: 5%;
 }
 
 .cloud-top {
     position: absolute;
-    right: 350px;
-    top: 80px;
-    width: 13.25rem;
+    right: 30%;
+    top: 35%;
+    width: 10%;
 }
 
 .cloud-bottom {
     position: absolute;
-    left: 300px;
-    bottom: 300px;
+    left: 20%;
+    bottom: 40%;
+    width: 20%;
 }
 
+.mountain {
+    width: 40%;
+}
+
+/* Middle container */
+
+.middle-container {
+    background-color: #D6E4E5;
+    padding: 8% 5%;
+}
+
+/* Profile section */
+
 .profile-photo {
-    width: 250px;
+    width: 20%;
     border-radius: 50%;
+}
+
+.hello {
+    margin: 2% auto;
 }
 
 .info {
@@ -76,70 +108,138 @@ a {
     margin: 0 auto;
 }
 
+/* Skill section */
+
 .skill-row {
-    width: 50%;
-    margin: 50px auto 150px auto;
     text-align: left;
-    line-height: 2;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 20%;
+}
+
+.my-skills {
+    margin: 5%;
+}
+
+.skills {
+    margin: 0 auto;
+    text-align: center;
 }
 
 .design-photo {
-    width: 219px;
+    width: 20%;
     border-radius: 50%;
-    float: left;
-    margin: auto 30px auto auto;
+    margin: 3rem 2rem;
 }
 
 .photography-photo {
-    width: 219px;
+    width: 20%;
     border-radius: 50%;
-    float: right;
-    margin: auto auto auto 30px;
+    margin: 3rem 2rem;
 }
+
+/* Contact section */
 
 .contact-me-message {
     margin: 70px auto;
     width: 40rem;
 }
 
+.message {
+    margin: 2rem;
+}
+
 .btn {
-    border-radius: 28px;
-    font-family: 'merriweather', serif;
-    color: #EFF5F5;
-    font-size: 1.25rem;
-    background: #EB6440;
-    padding: 10px 20px 10px 20px;
-    text-decoration: none;
-    transition: 0.2s;
-    margin: 50px auto;
-    display: block;
-    width: 7rem;
+    background-color: #EB6440;
+    border: #EFF5F5 ;
 }
 
 .btn:hover {
     background-color: rgb(255, 137, 104);
-  }
+}
 
-  .bottom-container {
+.bottom-container {
     background-color: #497174;
     padding: 30px;
     margin-top: 150px;
-  }
+}
 
-  .footer-link {
+.socials {
+    padding: 1% 30%;
+}
+
+.footer-link {
     color: #EFF5F5;
     margin: auto 15px;
     transition: 0.2s;
     text-decoration: none;
-  }
+}
 
-  .footer-link:hover {
+.footer-link:hover {
     color: #EB6440;
-  }
+}
 
-  .copyright {
+.copyright {
     color: #D6E4E5;
     margin: 30px auto 0 auto;
     font-family: 'merriweather', serif;
     font-size: 0.80rem;
-  }
+}
+
+
+     @media (max-width: 950px) {
+
+        body {
+            text-align: center;
+        }
+
+        .big-header {
+            font-size: 3rem;
+        }
+
+        .md-header {
+            font-size: 2rem;
+        }
+
+        .top-container {
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .middle-container {
+            background-color: #D6E4E5;
+        }
+
+        .skill-row {
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .design-photo {
+        width: 10rem;
+        border-radius: 0;
+        }
+
+        .photography-photo {
+            width: 10rem;
+            border-radius: 0;
+        }
+
+        .footer-link {
+            color: #EFF5F5;
+            padding: auto;
+            transition: 0.2s;
+            text-decoration: none;
+        }
+
+        .contact-me-message {
+            margin: 70px auto;
+            width: 30rem;
+        }
+
+
+
+
+    }   
