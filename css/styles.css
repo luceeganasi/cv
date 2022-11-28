@@ -133,13 +133,13 @@ a {
 }
 
 .design-photo {
-    width: 20%;
+    width: 30%;
     border-radius: 50%;
     margin: 3rem 2rem;
 }
 
 .photography-photo {
-    width: 20%;
+    width: 30%;
     border-radius: 50%;
     margin: 3rem 2rem;
 }
@@ -199,7 +199,7 @@ a {
 }
 
 
-     @media (max-width: 450px) {
+     @media (max-width: 700px) {
 
         body {
             text-align: center;
@@ -210,7 +210,8 @@ a {
         }
 
         .big-header {
-            font-size: 5rem;
+            font-size: 4rem;
+            line-height: 1;
         }
 
         .md-header {
@@ -303,15 +304,17 @@ a {
         }
 
         .design-photo {
-        width: 20rem;
-        border-radius: 0;
-        margin: 1rem;
+            width: 20rem;
+            border-radius: 0;
+            padding: 1rem;
+            margin: 0;
         }
 
         .photography-photo {
             width: 20rem;
             border-radius: 0;
-            margin: 1rem;
+            margin: 0;
+            padding: 1rem;
         }
 
         /* Contact section */
@@ -331,11 +334,10 @@ a {
         /* Footer section */
 
         .icons-container {
-            text-align: center;
-            margin: 0.25rem auto;
+            margin: 1rem auto;
         }
         .socials {
-            margin: 0 11rem;
+            margin: 0 7rem;
         }
 
     }
