@@ -2,6 +2,8 @@ body {
     background-color: #EFF5F5;
     text-align: center;
     font-family: 'merriweather', serif;
+    min-height: 100vh;
+    min-width: 100vh;
 }
 
 h1 {
@@ -30,7 +32,7 @@ h3 {
 hr {
     border-style: dotted none none none;
     border-width: 8px;
-    border-color: #D6E4E5;
+    border-color: rgb(109, 109, 109);
     width: 100px;
     margin: 80px auto;
 }
@@ -104,11 +106,15 @@ a {
 }
 
 .info {
-    width: 40rem;
+    width: 60%;
     margin: 0 auto;
 }
 
 /* Skill section */
+
+#skills-section hr {
+    margin: 3rem auto;
+}
 
 .skill-row {
     text-align: left;
@@ -165,12 +171,18 @@ a {
 }
 
 .socials {
-    padding: 1% 30%;
+    justify-content: center;
+    margin: 1% auto;
+    text-align: center;
 }
+
+.icons-container {
+    
+}
+
 
 .footer-link {
     color: #EFF5F5;
-    margin: auto 15px;
     transition: 0.2s;
     text-decoration: none;
 }
@@ -187,18 +199,18 @@ a {
 }
 
 
-     @media (max-width: 950px) {
+     @media (max-width: 450px) {
 
         body {
             text-align: center;
         }
 
         .big-header {
-            font-size: 3rem;
+            font-size: 5rem;
         }
 
         .md-header {
-            font-size: 2rem;
+            font-size: 4rem;
         }
 
         .top-container {
@@ -211,6 +223,18 @@ a {
             background-color: #D6E4E5;
         }
 
+        .info {
+            width: 50%;
+        }
+
+        /* skills section */
+
+        .skills-info {
+            text-align: center;
+            width: 60%;
+            margin: auto;
+        }
+
         .skill-row {
             text-align: center;
             justify-content: center;
@@ -218,20 +242,20 @@ a {
         }
 
         .design-photo {
-        width: 10rem;
+        width: 20rem;
         border-radius: 0;
         }
 
         .photography-photo {
-            width: 10rem;
+            width: 20rem;
             border-radius: 0;
         }
 
-        .footer-link {
-            color: #EFF5F5;
-            padding: auto;
-            transition: 0.2s;
-            text-decoration: none;
+        /* Contact section */
+
+        .message {
+            width: 50%;
+            margin: 2rem auto;
         }
 
         .contact-me-message {
@@ -239,7 +263,14 @@ a {
             width: 30rem;
         }
 
+        /* Footer section */
 
+        .icons-container {
+            text-align: center;
+            margin: 0.25rem auto;
+        }
+        .socials {
+            margin: 0 11rem;
+        }
 
-
-    }   
+    }
