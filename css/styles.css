@@ -205,50 +205,113 @@ a {
             text-align: center;
         }
 
+        p {
+            font-size: 2rem;
+        }
+
         .big-header {
             font-size: 5rem;
         }
 
         .md-header {
-            font-size: 4rem;
+            font-size: 4.5rem;
         }
 
+        /* Navigation section */
+
+        .navbar-custom {
+            padding: 3rem;
+            
+        }
+
+        .logo {
+            width: 5rem;
+        }
+
+        .navbar-image {
+            height: 4rem;
+            width: 4rem;
+            
+        }
+
+        /* Landing section */
+
         .top-container {
+            padding-top: 10rem;
             text-align: center;
             justify-content: center;
             align-items: center;
+        }
+
+        .big-header {
+            font-size: 10rem;
+        }
+
+        .mountain {
+            width: 90%;
+        }
+
+        .cloud-top {
+            position: absolute;
+            right: 20%;
+            top: 65%;
+            width: 20%;
+        }
+        
+        .cloud-bottom {
+            position: absolute;
+            left: 20%;
+            bottom: 70%;
+            width: 30%;
+        }
+
+        /* Profile section */
+
+        .info {
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .profile-photo {
+            width: 20rem;
         }
 
         .middle-container {
             background-color: #D6E4E5;
+            padding: 5rem 0;
         }
 
         .info {
-            width: 50%;
+            width: 70%;
         }
 
         /* skills section */
 
+        .skill-title {
+            font-size: 3rem;
+            margin: 2rem auto;
+        }
+
         .skills-info {
-            text-align: center;
-            width: 60%;
-            margin: auto;
+            width: 100%;
+            margin: 0;
         }
 
         .skill-row {
-            text-align: center;
-            justify-content: center;
-            align-items: center;
+            text-align: left;
+            padding: 0;
         }
 
         .design-photo {
         width: 20rem;
         border-radius: 0;
+        margin: 1rem;
         }
 
         .photography-photo {
             width: 20rem;
             border-radius: 0;
+            margin: 1rem;
         }
 
         /* Contact section */
@@ -256,11 +319,13 @@ a {
         .message {
             width: 50%;
             margin: 2rem auto;
+            line-height: 2;
         }
 
         .contact-me-message {
             margin: 70px auto;
             width: 30rem;
+            font-size: 1rem;
         }
 
         /* Footer section */
