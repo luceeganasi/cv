@@ -176,11 +176,6 @@ a {
     text-align: center;
 }
 
-.icons-container {
-    
-}
-
-
 .footer-link {
     color: #EFF5F5;
     transition: 0.2s;
@@ -246,6 +241,11 @@ a {
 
         .big-header {
             font-size: 10rem;
+        }
+
+        .about-you {
+            font-size: 1.5rem;
+            margin: 2rem;
         }
 
         .mountain {
