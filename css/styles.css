@@ -1,30 +1,41 @@
+/* Global Styles */
+:root {
+    --color-primary: #EB6440;
+    --color-secondary: #497174;
+    --color-background: #EFF5F5;
+    --color-text: #497174;
+    --font-heading: 'Lora', serif;
+    --font-body: 'Merriweather', serif;
+    --font-accent: 'Montserrat', sans-serif;
+}
+
 body {
-    background-color: #EFF5F5;
+    background-color: var(--color-background);
     text-align: center;
-    font-family: 'merriweather', serif;
+    font-family: var(--font-body);
     min-height: 100vh;
-    min-width: 100vh;
+    margin: 0;
+    color: var(--color-text);
+}
+
+h1, h2, h3 {
+    color: var(--color-primary);
 }
 
 h1 {
-    color: #EB6440;
-    font-family: 'lora', serif;
+    font-family: 'Lora', serif;
     font-weight: 700;
-    font-size: 4.38rem;
+    font-size: 8rem;
     margin: 50px auto 0 auto;
     line-height: 2;
 }
 
 h2 {
-    font-family: 'merriweather', serif;
-    color: #EB6440;
-    font-size: 3rem;
+    font-size: 6rem;
     font-weight: bold;
 }
 
 h3 {
-    font-family: 'merriweather', serif;
-    color: #EB6440;
     font-weight: 400;
     font-size: 2rem;
 }
@@ -32,52 +43,83 @@ h3 {
 hr {
     border-style: dotted none none none;
     border-width: 8px;
-    border-color: rgb(109, 109, 109);
+    border-color: rgb(191, 198, 192);
     width: 100px;
     margin: 80px auto;
 }
 
 p {
     color: #497174;
-    font-family: 'montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     line-height: 2;
 }
 
-.md-header {
-    font-size: 4rem;
-}
-
-.big-header {
-    font-size: 7rem;
-}
-
 a {
     color: #EB6440;
+    text-decoration: none;
 }
 
-/* navigation */
+a:hover {
+    color: rgb(255, 137, 104);
+}
 
+/* Navbar */
 .navbar {
-    padding: 0.5rem 3rem;
+    padding: 1rem 3rem;
+    display: flex;
+    justify-content: space-between; /* This spaces out the navbar-brand and navbar-menu */
+    align-items: center;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-toggler {
+    display: none;
+}
+
+.navbar-brand img {
+    width: 50px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between; /* Ensures space-between layout within nav-container */
+    width: 100%;
+    align-items: center;
+}
+
+.navbar-menu ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar-menu ul li {
+    margin: 0 1rem;
+}
+
+.navbar-menu ul li a {
+    font-size: 1rem;
+    font-weight: 500;
 }
 
 /* Top container */
-
 .top-container {
-    position: relative;
     padding: 5%;
+    position: relative;
+}
+
+.cloud-top, .cloud-bottom {
+    position: absolute;
 }
 
 .cloud-top {
-    position: absolute;
     right: 30%;
     top: 35%;
     width: 10%;
 }
 
 .cloud-bottom {
-    position: absolute;
     left: 20%;
     bottom: 40%;
     width: 20%;
@@ -88,257 +130,269 @@ a {
 }
 
 /* Middle container */
-
 .middle-container {
     background-color: #D6E4E5;
-    padding: 8% 5%;
+    padding: 80px 0;
 }
 
-/* Profile section */
+.profile {
+    max-width: 800px;
+    margin: 0 auto;
+}
 
 .profile-photo {
-    width: 20%;
+    width: 150px;
     border-radius: 50%;
 }
 
 .hello {
-    margin: 2% auto;
+    margin: 30px 0;
 }
 
 .info {
-    width: 60%;
-    margin: 0 auto;
+    font-size: 1.5rem;
 }
 
-/* Skill section */
-
-#skills-section hr {
-    margin: 3rem auto;
+/* Skills section */
+.skills {
+    background-color: #EFF5F5;
+    padding: 60px 0;
 }
 
 .skill-row {
-    text-align: left;
-    justify-content: center;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding: 2% 20%;
-}
-
-.my-skills {
-    margin: 5%;
-}
-
-.skills {
+    max-width: 800px;
     margin: 0 auto;
-    text-align: center;
+    text-align: left;
 }
 
-.design-photo {
-    width: 30%;
-    border-radius: 50%;
-    margin: 3rem 2rem;
+.skill-text {
+    width: 50%;
+    padding: 1rem;
 }
 
-.photography-photo {
-    width: 30%;
-    border-radius: 50%;
-    margin: 3rem 2rem;
+.skill-title {
+    font-size: 2.2rem;
+}
+
+.skills-info {
+    font-size: 1.1rem;
+}
+
+.design-photo, .photography-photo {
+    width: 40%;
 }
 
 /* Contact section */
 
-.contact-me-message {
-    margin: 70px auto;
-    width: 40rem;
+#contact-section {
+    padding-bottom: 100px;
+}
+.contact-me {
+    background-color: #EFF5F5;
 }
 
-.message {
-    margin: 2rem;
+.contact-me p {
+    color: #497174;
+}
+
+.contact-me a {
+    color: white;
 }
 
 .btn {
     background-color: #EB6440;
-    border: #EFF5F5 ;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border-radius: 8px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
 }
 
 .btn:hover {
-    background-color: rgb(255, 137, 104);
-}
-
-.bottom-container {
-    background-color: #497174;
-    padding: 30px;
-    margin-top: 150px;
-}
-
-.socials {
-    justify-content: center;
-    margin: 1% auto;
-    text-align: center;
-}
-
-.footer-link {
-    color: #EFF5F5;
-    transition: 0.2s;
-    text-decoration: none;
-}
-
-.footer-link:hover {
+    background-color: #EFF5F5;
+    border-style: solid;
+    border-color: #EB6440;
     color: #EB6440;
 }
 
-.copyright {
-    color: #D6E4E5;
-    margin: 30px auto 0 auto;
-    font-family: 'merriweather', serif;
-    font-size: 0.80rem;
+/* Footer */
+.bottom-container {
+    background-color: #D6E4E5;
+    padding: 60px 0;
 }
 
+.icons-container {
+    display: inline-block;
+    margin: 0 1rem;
+}
 
-     @media (max-width: 700px) {
+.footer-link {
+    font-size: 1.2rem;
+}
 
-        body {
-            text-align: center;
-        }
+footer i {
+    margin-right: 0.5rem;
+}
 
-        p {
-            font-size: 2rem;
-        }
+/* Show navbar-toggler for mobile */
+.navbar-toggler {
+    display: block; /* Show only on mobile */
+    background-color: #EB6440;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
 
-        .big-header {
-            font-size: 4rem;
-            line-height: 1;
-        }
+.navbar-toggler-icon {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    display: block;
+    margin: 5px auto;
+}
 
-        .md-header {
-            font-size: 4.5rem;
-        }
+/* Hide the menu initially */
+.navbar-menu {
+    display: none; /* Hidden by default */
+}
 
-        /* Navigation section */
+/* Display the menu when toggled */
+.navbar-menu.show {
+    display: block;
+}
 
-        .navbar-custom {
-            padding: 3rem;
-            
-        }
-
-        .logo {
-            width: 5rem;
-        }
-
-        .navbar-image {
-            height: 4rem;
-            width: 4rem;
-            
-        }
-
-        /* Landing section */
-
-        .top-container {
-            padding-top: 10rem;
-            text-align: center;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .big-header {
-            font-size: 10rem;
-        }
-
-        .about-you {
-            font-size: 1.5rem;
-            margin: 2rem;
-        }
-
-        .mountain {
-            width: 90%;
-        }
-
-        .cloud-top {
-            position: absolute;
-            right: 20%;
-            top: 65%;
-            width: 20%;
-        }
-        
-        .cloud-bottom {
-            position: absolute;
-            left: 20%;
-            bottom: 70%;
-            width: 30%;
-        }
-
-        /* Profile section */
-
-        .info {
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .profile-photo {
-            width: 20rem;
-        }
-
-        .middle-container {
-            background-color: #D6E4E5;
-            padding: 5rem 0;
-        }
-
-        .info {
-            width: 70%;
-        }
-
-        /* skills section */
-
-        .skill-title {
-            font-size: 3rem;
-            margin: 2rem auto;
-        }
-
-        .skills-info {
-            width: 100%;
-            margin: 0;
-            font-size: 1.25rem;
-        }
-
-        .skill-row {
-            text-align: left;
-            padding: 0;
-        }
-
-        .design-photo {
-            width: 20rem;
-            border-radius: 0;
-            padding: 1rem;
-            margin: 0;
-        }
-
-        .photography-photo {
-            width: 20rem;
-            border-radius: 0;
-            margin: 0;
-            padding: 1rem;
-        }
-
-        /* Contact section */
-
-        .message {
-            width: 50%;
-            margin: 2rem auto;
-            line-height: 2;
-        }
-
-        .contact-me-message {
-            margin: 70px auto;
-            width: 30rem;
-            font-size: 1rem;
-        }
-
-        /* Footer section */
-
-        .icons-container {
-            margin: 1rem auto;
-        }
-        .socials {
-            margin: 0 7rem;
-        }
-
+/* Mobile styles for screens 600px and below */
+@media (max-width: 600px) {
+    /* Adjusting font sizes */
+    h1 {
+        font-size: 2.5rem; /* Reduce size for mobile */
     }
+
+    h2 {
+        font-size: 6rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.9rem; /* Slightly smaller text */
+    }
+
+    /* Navbar adjustments */
+    .navbar {
+        flex-direction: column; /* Stack logo and menu */
+        align-items: flex-start;
+    }
+
+    .navbar-menu ul {
+        flex-direction: column; /* Stack menu items */
+        width: 100%; 
+        padding: 0;
+    }
+
+    .navbar-menu ul li {
+        margin: 1rem 0;
+    }
+
+    /* Adjust container paddings */
+    .top-container, .middle-container, .skills, .contact-me, .bottom-container {
+        padding: 5% 10px; /* Reduce side padding */
+    }
+
+    /* Center the clouds for mobile */
+    .cloud-bottom {
+        left: 60%;
+        right: 0%;
+        margin: auto;
+        width: 30%; /* Adjust size for mobile */
+    }
+
+    .cloud-top {
+        left: 0%;
+        right: 80%;
+        margin: auto;
+        width: 30%; /* Adjust size for mobile */
+    }
+
+    .mountain {
+        width: 60%; /* Reduce mountain size for mobile */
+    }
+
+    .big-header {
+        font-size: 3rem;
+    }
+
+    /* Middle container */
+    .middle-container {
+        background-color: #D6E4E5;
+        padding: 80px 0;
+    }
+
+    .profile {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .profile-photo {
+        width: 150px;
+        border-radius: 50%;
+    }
+
+    .hello {
+        margin: 30px 0;
+        font-size: 6rem;
+    }
+
+    .info {
+        font-size: 1rem;
+    }
+
+    /* Skills section */
+    .skill-row {
+        flex-direction: column; /* Stack skill image and text */
+        text-align: center; /* Center text */
+    }
+
+    .skill-text, .design-photo, .photography-photo {
+        width: 100%; /* Full width on mobile */
+        padding: 0;
+    }
+
+    .design-photo, .photography-photo {
+        margin: 20px 0; /* Add spacing between text and images */
+        width: 70%;
+    }
+
+    /* Contact Section */
+    .btn {
+        font-size: 1.2rem;
+        padding: 0.8rem 1.5rem;
+    }
+
+    /* Footer */
+    .icons-container {
+        display: block;
+        margin: 10px 0; /* Stack icons */
+    }
+
+    .footer-link {
+        font-size: 1rem; /* Reduce font size */
+    }
+}
+
+/* Media query to hide the toggle button on larger screens */
+@media (min-width: 601px) {
+    .navbar-menu {
+        display: flex; /* Display menu normally */
+    }
+
+    .navbar-toggler {
+        display: none; /* Hide toggle button on larger screens */
+    }
+}
